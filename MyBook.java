@@ -244,12 +244,105 @@ class Publisher{
 class Author{
     private String name;
     private String address;
+    private int age;
+    public Author(String name, String address, int age)
+    {
+        this.name = name;
+        this.address = adress;
+        this.age = age;
+    }
+    public Author()
+    {
+
+    }
+    public void setName(String name)
+    {
+        this.name = name;
+    }
+    public String getName()
+    {
+        return this.name;
+    }
+    public void setAddress(String address)
+    {
+        this.address = address;
+    }
+    public String getAddress()
+    {
+        return this.address;
+    }
+    public void setAge(int age)
+    {
+        this.age = age;
+    }
+    public int getAge()
+    {
+        return this.age;
+    }
+    public String write()
+    {
+        return "Method write called from Author";
+    }
 
 }
 class Series{
+    private String seriesName;
+    public Series()
+    {
+
+    }
+    public void setSeriesName(String seriesName)
+    {
+        this.seriesName = seriesName;
+    }
+    public string getSeriesName()
+    {
+        return this.seriesName;
+    }
+    public String theme()
+    {
+        return "Method theme called from Series";
+    }
 
 }
 class Contract{
+    private String date;
+    private Publisher publisherInfo;
+    private Author authorInfo;
+    public Contract(String date, Publisher publisherInfo, Author authorInfo)
+    {
+        this.date = date;
+        this.publisherInfo = publisherInfo;
+        this.authorInfo = authorInfo;
+    }
+    public void setDate(String date)
+    {
+        this.date = date;
+    }
+    public String getDate()
+    {
+        return this.date;
+    }
+    public void setPublisherInfo(Publisher publisherInfo)
+    {
+         this.publisherInfo = publisherInfo;
+    }
+    public Publisher getPublisherInfo()
+    {
+        return this.publisherInfo;
+    }
+    public void setAuthorInfo(Author authorInfo)
+    {
+        this.authorInfo = authorInfo;
+    }
+    public Author getAuthorInfo()
+    {
+        return this.authorInfo;
+    }
+    public String printContract()
+    {
+        return "Method printContract called from Contract";
+    }
 
 }
 class Category{
